@@ -1,0 +1,25 @@
+{
+  "name": "03_proyecto_nodejs_mongodb",
+  "version": "1.0.0",
+  "description": "Proyecto con NodeJS y Mongo DB Atlas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "dev2": "set DEBUG=app:* & nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "excel4node": "^1.8.1",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "mongodb": "^5.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
