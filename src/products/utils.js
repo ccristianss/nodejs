@@ -1,4 +1,4 @@
-const debug = require("debug")("app:module-products-utils");
+//const debug = require("debug")("app:module-products-utils");
 const excelGenerator = (products, name, res) => {
   const xl = require("excel4node");
 

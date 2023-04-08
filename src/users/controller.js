@@ -1,4 +1,4 @@
-const debug = require("debug")("app:module-users-controller");
+//const debug = require("debug")("app:module-users-controller");
 const { UsersService } = require("./services");
 const { Response } = require("../common/response");
 const createError = require("http-errors");
@@ -9,7 +9,7 @@ module.exports.UsersController = {
       //res.json(users);
       Response.success(res, 200, "Lista de Usuarios", users);
     } catch (error) {
-      debug(error);
+      //debug(error);
       //res.status(500).json({ message: "GetUsers: Internal server error" });
       Response.error(res);
     }
@@ -30,7 +30,7 @@ module.exports.UsersController = {
         Response.success(res, 200, `Usuario ${id}`, user);
       }
     } catch (error) {
-      debug(error);
+      //debug(error);
       //res.status(500).json({ message: "GetUser: Internal server error" });
       Response.error(res);
     }
@@ -48,7 +48,7 @@ module.exports.UsersController = {
         Response.success(res, 201, "Usuario Agregado", insertedId);
       }
     } catch (error) {
-      debug(error);
+      //debug(error);
       //res.status(500).json({ message: "CreateUser: Internal server error" });
       Response.error(res);
     }

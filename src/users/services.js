@@ -1,4 +1,4 @@
-const debug = require("debug")("app:module-users-service");
+//const debug = require("debug")("app:module-users-service");
 const { ObjectId } = require("mongodb");
 const { Database } = require("../database/index");
 const COLLECTION = "users";

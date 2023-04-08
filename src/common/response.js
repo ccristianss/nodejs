@@ -1,4 +1,4 @@
-const debug = require("debug")("app:module-common-response");
+//const debug = require("debug")("app:module-common-response");
 const createError = require("http-errors");
 
 module.exports.Response = {

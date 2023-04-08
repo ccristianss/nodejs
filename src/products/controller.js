@@ -1,4 +1,4 @@
-const debug = require("debug")("app:module-products-controller");
+//const debug = require("debug")("app:module-products-controller");
 const { ProductsService } = require("./services");
 const { Response } = require("../common/response");
 const createError = require("http-errors");
@@ -9,7 +9,7 @@ module.exports.ProductsController = {
       //res.json(products);
       Response.success(res, 200, "Lista de productos", products);
     } catch (error) {
-      debug(error);
+      //debug(error);
       //res.status(500).json({ message: "GetProducts: Internal server error" });
       Response.error(res);
     }
@@ -30,7 +30,7 @@ module.exports.ProductsController = {
         Response.success(res, 200, `Producto ${id}`, product);
       }
     } catch (error) {
-      debug(error);
+      //debug(error);
       //res.status(500).json({ message: "GetProduct: Internal server error" });
       Response.error(res);
     }
@@ -48,7 +48,7 @@ module.exports.ProductsController = {
         Response.success(res, 201, "Producto Agregado", insertedId);
       }
     } catch (error) {
-      debug(error);
+      //debug(error);
       //res.status(500).json({ message: "CreateProduct: Internal server error" });
       Response.error(res);
     }
@@ -58,7 +58,7 @@ module.exports.ProductsController = {
     try {
       ProductsService.generateReport("Inventario", res);
     } catch (error) {
-      debug(error);
+      //debug(error);
       Response.error(res);
     }
   },
